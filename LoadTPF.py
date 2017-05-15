@@ -35,3 +35,32 @@ while True:
             pass
         shutil.copytree(item[1], target)
     done = mounted
+
+#Alternative C++ approach
+"""
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+int main () 
+{
+  string line;
+  ifstream file ("/media/sarthak11/Tanmay/Sarthak/Rnp.txt");
+  ofstream file1 ("/home/sarthak11/Desktop/Local2.txt"); 
+  if (file.is_open())
+  {
+    while ( getline (file,line) )
+    {
+	//cout << line << '\n';
+	file1<<line<<'\n';
+    }
+    file.close();
+    file1.close();
+  }
+
+  else cout << "Unable to open file"; 
+
+  return 0;
+}"""
