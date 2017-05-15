@@ -8,7 +8,7 @@ import shutil
 target_folder = "/home/sarthak11/Desktop/TPF"
 excluded = ["HP_TOOLS"]
 #--
-
+#use lsusb and lsblk for excluded directory
 def get_mountedlist():
     return [(item.split()[0].replace("├─", "").replace("└─", ""),
              item[item.find("/"):]) for item in subprocess.check_output(
