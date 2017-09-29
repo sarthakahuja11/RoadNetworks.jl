@@ -1,0 +1,7 @@
+<launch>
+    <!-- PCL PUBLISHER Node-->
+    <node pkg="stereo_tf" type="publish_pcl" name="publish_pcl"/>
+    <!-- PCL SUBCRIBER Node-->
+    <node pkg="stereo_tf" type="subscribe_pcl" name="subscribe_pcl" output="screen"/>
+
+</launch>
