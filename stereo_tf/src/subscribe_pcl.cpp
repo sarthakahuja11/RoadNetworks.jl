@@ -25,10 +25,10 @@ int main(int argc, char** argv)
           ros::Rate loop_rate(20);
           tf::Transform transform;
           static tf::TransformBroadcaster br;
-	  pcl::PointXYZ& point;
+	  //pcl::PointXYZ& point;
 		while(ros::ok())
 		{
-			pcl::PointXYZ(1.0, 2.0, 3.0)
+			pcl::PointXYZ(1.0, 2.0, 3.0);
 			transform.setOrigin(tf::Vector3(5.0,6.0,0.0));  //(goalx, goaly, 0.0) );
 			tf::Quaternion q;
 			q.setRPY(0, 0, 0);
