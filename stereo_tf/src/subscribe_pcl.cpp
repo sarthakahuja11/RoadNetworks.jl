@@ -6,7 +6,7 @@
 
 #include "subscribe_pcl.hpp"
 
-//check rosrun from beginner tut. and rviz tf too
+//check rosrun from beginner tut. and rviz tf too with visualization
 typedef pcl::PointCloud<pcl::PointXYZ> PointCloud;
 
 void callback(const PointCloud::ConstPtr& msg)
