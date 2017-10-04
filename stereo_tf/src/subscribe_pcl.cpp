@@ -5,8 +5,7 @@
 //#include <boost/foreach.hpp>
 
 #include "subscribe_pcl.hpp"
-
-//check rosrun from beginner tut. and rviz tf too with visualization
+//check rosrun from beginner tut. and rviz tf too with visualization with live stereo data left if possible
 typedef pcl::PointCloud<pcl::PointXYZ> PointCloud;
 
 void callback(const PointCloud::ConstPtr& msg)
@@ -30,7 +29,7 @@ int main(int argc, char** argv)
 		while(ros::ok())
 		{
 			pcl::PointXYZ(1.0, 2.0, 3.0);
-			transform.setOrigin(tf::Vector3(5.0,6.0,0.0));  //(goalx, goaly, 0.0) );
+			transform.setOrigin(tf::Vector3(8.0,9.0,0.0));  // Sign would be present here (goalx, goaly, 0.0) );
 			tf::Quaternion q;
 			q.setRPY(0, 0, 0);
 			transform.setRotation(q);
